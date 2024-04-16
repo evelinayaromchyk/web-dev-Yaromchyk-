@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5</title>
+    <style>
+        /* CSS styles will be added here */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Box Model</a></li>
+                <li><a href="#clearfix-hack">Clearfix Hack</a></li>
+                <li><a href="#margin-collapse">Margin Collapse</a></li>
+                <li><a href="#holy-grail-problem">Holy Grail Problem</a></li>
+                <li><a href="#modern-solutions">Modern Solutions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Understanding CSS Concepts</h1>
+            <section id="box-model">
+                <h2>Box Model in CSS</h2>
+                <p>The box model in CSS refers to the way elements are structured, including their content, padding, border, and margin. It's essential for understanding how elements are laid out and interact with each other on a webpage.</p>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-kkmpzuZcBwvkOmoGW_sN43X_J-Atj8C_TnHyBfabA&s" alt="Box Model Diagram" style="max-width: 400px; float: right;">
+                    <figcaption>Diagram illustrating the CSS Box Model</figcaption>
+                </figure>
+                <h3>Definition of box-sizing property:</h3>
+                <p>The <strong>box-sizing</strong> property defines how the total width and height of an element are calculated. It can have two values:</p>
+                <ul>
+                    <li><strong>content-box:</strong> This is the default value where the width and height properties include only the content, and not the padding, border, or margin.</li>
+                    <li><strong>border-box:</strong> With this value, the width and height properties include the padding and border, but not the margin.</li>
+                </ul>
+            </section>
+            <section id="clearfix-hack">
+                <h2>Clearfix Hack</h2>
+                <p>The "clearfix hack" is a technique used to clear floated elements inside a container. It's typically applied when a container has floated child elements and needs to stretch to contain them properly.</p>
+                <figure>
+                    <img src="https://w3bits.com/wp-content/uploads/clearfix.jpg" alt="Clearfix Hack Example" style="max-width: 400px; float: right;">
+                    <figcaption>An example of clearfix hack in action</figcaption>
+                </figure>
+                <p>The clearfix hack usually involves adding a clearfix class to the container element and applying specific CSS to clear the floats.</p>
+            </section>
+            <section id="margin-collapse">
+                <h2>Margin Collapse</h2>
+                <p>Margin collapse is a phenomenon in CSS where the vertical margins of adjacent elements collapse into a single margin. It typically occurs between sibling elements or between a parent and its first/last child.</p>
+                <p>Use cases for <code>margin: auto</code> include centering an element horizontally within its container. Negative margin values can be used to create overlapping effects or to pull an element outside its container.</p>
+                <figure>
+                    <img src="https://miro.medium.com/v2/resize:fit:535/1*irihT0essp7Rs2cqtHxyQw.png" alt="Margin Collapse Example" style="max-width: 400px; float: right;">
+                    <figcaption>An example of margin collapse</figcaption>
+                </figure>
+            </section>
+            <section id="holy-grail-problem">
+                <h2>The Holy Grail Layout Problem</h2>
+                <p>The Holy Grail Layout is a common web design pattern that consists of a header, footer, and three columns of content, with the center column being the tallest. The problem with achieving this layout traditionally was dealing with equal height columns without resorting to hacks or unnecessary markup.</p>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1El_GYSY3f-kjSy6XUDUksGwiLfDSQO4lkzcEmWqNA&s" alt="Holy Grail Layout" style="max-width: 400px; float: right;">
+                    <figcaption>The Holy Grail Layout</figcaption>
+                </figure>
+            </section>
+            <section id="modern-solutions">
+                <h2>Modern Solutions</h2>
+                <p>Modern solutions to achieve the Holy Grail Layout include using CSS Flexbox or CSS Grid layouts. These layout systems provide more flexibility and control over the positioning and sizing of elements, making it easier to create complex layouts without relying on outdated techniques or hacks.</p>
+                <p>Both Flexbox and Grid layouts offer powerful features for creating responsive and dynamic layouts, making them ideal choices for modern web design.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Student: [Your Name]</p>
+        <p>Course: [Course Name]</p>
+        <p>Date: [Date]</p>
+        <p>Day: [Day]</p>
+        <p>Place: [Place]</p>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
